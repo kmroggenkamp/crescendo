@@ -1,0 +1,155 @@
+html {
+  background: #f7f7f7;
+}
+
+body {
+  font-family: 'Bitter', sans-serif;
+  background: white;
+  margin: 0 auto;
+  color: rgb(49, 46, 46);
+  text-align: center;
+}
+
+header, footer {
+  /* background: #333a40; */
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 20px;
+}
+
+header section {
+  display: inline-block;
+  width: 100%;
+}
+
+footer {
+  text-align: right;
+}
+
+nav {
+  display: inline-block;
+}
+nav ul {
+  margin-block-end: 1em;
+}
+nav li {
+  display: inline;
+  margin-right: 15px;
+}
+
+main section {
+  box-sizing: border-box;
+  border: 1px solid grey;
+  /* width: 30%; */
+  margin: 5px;
+  padding: 5px;
+  width: 100%;
+  /* text-align: center; */
+}
+main ul, main ol {
+  overflow: auto;
+}
+main ul li {
+  min-width: 200px;
+  width: 50%;
+  float: left;
+  list-style: inside;
+}
+main ol li {
+  list-style-position: inside;
+}
+main li:last-child {
+  margin-bottom: 15px;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  /* list-style: none; */
+  line-height: 30px;
+}
+
+.special {
+  color: red;
+}
+.special li {
+  width: 100%;
+  list-style: none;
+  margin-top: 15px;
+}
+.special li:first-child {
+  margin-top: 0;
+}
+.special b {
+  display: block;
+}
+
+.optional {
+  font-style: italic;
+  color: green;
+}
+
+input[type="search"] {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+a:hover {
+  color: #0e69e9;
+}
+
+img {
+  max-width: 80%;
+  max-height: 330px;
+}
+
+aside img {
+  width: 50px;
+  margin-right: 10px;
+}
+aside h3 {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none !important;
+}
+
+@media (min-width: 1000px) {
+  body {
+    text-align: left;
+  }
+
+  header section {
+     width: 60%;
+  }
+
+  aside {
+    max-width: 25%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 10px 10px 20px;
+  }
+  aside h2 {
+    width: 25vw;
+  }
+
+  main {
+    width: 66%;
+    display: inline-block;
+    padding: 10px 20px 10px 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    max-width: 80vw;
+  }
+}
